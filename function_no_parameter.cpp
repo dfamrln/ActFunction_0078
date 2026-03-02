@@ -1,10 +1,21 @@
 #include <iostream>
 using namespace std;
 
+int panjang, lebar;
+
 void input() {
-    int panjang, lebar;
     cout << "Masukkan panjang : ";
     cin >> panjang;
     cout << "Masukkan lebar : ";
     cin >> lebar;
+}
+
+int luaspersegi()
+{
+    return panjang * lebar;
+}
+
+int kelilingpersegi()
+{
+    return 2 * (panjang + lebar);
 }
